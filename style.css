@@ -1,0 +1,496 @@
+body,
+main {
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(#f5f5f7 0 40%, #fff 70% 100%);
+	font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+		"Arial", sans-serif;
+	font-size: 14px;
+	-webkit-font-smoothing: antialiased; /* fonts appeart to be bolder pn mac without it*/
+}
+
+/*----------- vissually hidden elements -----------*/
+
+/* so screenreaders can read whats on the background image */
+.visuallyhidden {
+	position: absolute;
+	clip: rect(1px, 1px, 1px, 1px);
+	-webkit-clip-path: inset(0px 0px 99.9% 99.9%);
+	clip-path: inset(0px 0px 99.9% 99.9%);
+	overflow: hidden;
+	height: 1px;
+	width: 1px;
+	padding: 0;
+	border: 0;
+}
+
+/* sets the max width of the conten in the larger container */
+.large-center-container {
+	margin: 0 auto;
+	max-width: 2560px;
+}
+
+/*----------- chevron svg -----------*/
+.chevron {
+	margin: 0 0 -2px 0;
+	height: 16px;
+}
+
+/*----------- navbar content CSS -----------*/
+.nav-content {
+	width: 100%;
+	background: rgba(22, 22, 23, 0.8);
+	position: fixed;
+	top: 0;
+	height: 44px; /* If height property is not included in the CSS, it's 48px automatically instead of 44px */
+	backdrop-filter: saturate(180%) blur(20px);
+	-webkit-backdrop-filter: saturate(180%) blur(20px); /* for Exge */
+	--globalnav-backdrop-filter: saturate(180%) blur(20px); /* for Firefox */
+}
+
+.container-middle {
+	box-sizing: border-box; /* so the container is 980px including the padding*/
+	max-width: 980px;
+	margin: 0 auto;
+	padding: 0 22px;
+}
+
+.nav-list {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav-item {
+	list-style-type: none;
+	fill: rgba(255, 255, 255, 0.8);
+}
+
+.nav-item svg {
+	height: 44px;
+}
+
+.nav-item path {
+	fill: rgba(255, 255, 255, 0.8);
+}
+
+.nav-item path:hover {
+	fill: rgb(255, 255, 255);
+}
+
+/*----------- trade in section CSS -----------*/
+
+.trade-in-section {
+	margin: 44px 0 0 0;
+	color: #1d1d1f;
+	background-color: #fbfbfd;
+	padding: 12px 0;
+	text-align: center;
+}
+
+/*----------- hero section CSS -----------*/
+
+.module-content {
+	background-size: cover;
+	background-position: center;
+	height: 650px;
+	color: white;
+}
+
+.iPhone-14-Pro {
+	background-image: url("https://www.apple.com/v/home/ay/images/heroes/iphone-14-pro/hero_iphone14pro__e5xbgo5ffhg2_largetall.jpg");
+}
+
+.iPhone-14 {
+	background-image: url("https://www.apple.com/v/home/ay/images/heroes/iphone-14/hero_iphone14__fjmsqstr1ceq_largetall.jpg");
+	color: #1d1d1f;
+}
+
+.Apple-Watch {
+	background-image: url("https://www.apple.com/v/home/ay/images/heroes/apple-watch-series-8/hero_apple_watch_series_8__bjc1ok5mkjua_largetall.jpg");
+}
+
+.Apple-Watch .headline {
+	background-image: url("https://www.apple.com/v/home/ay/images/logos/apple-watch-series-8/hero_logo_apple_watch_series_8__ezarmmoobhg2_largetall.png");
+	height: 71px;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: 6px;
+}
+
+.Apple-Watch .subhedline {
+	margin-top: 20px;
+}
+
+.unit-text {
+	text-align: center;
+	padding: 65px 0 0 0;
+}
+
+.unit-text h2 {
+	margin: 6px 0 0 0;
+	font-size: 56px;
+}
+
+.unit-text h3 {
+	margin: 0;
+	font-size: 28px;
+	font-weight: 400;
+}
+
+.hero-text-links {
+	margin: 13px 0 0 0;
+}
+
+.hero-text-links a {
+	font-size: 21px;
+	margin: 0 17.5px;
+}
+
+a {
+	color: #2997ff;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/*----------- two columns sedign CSS -----------*/
+
+.two-col-section {
+	display: flex;
+	flex-direction: column;
+	width: calc(100% - 24px);
+	gap: 12px;
+	margin: 12px auto;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	gap: 12px;
+}
+
+.col-50 {
+	width: 50%;
+}
+
+.card-unit-text {
+	text-align: center;
+	margin: 44px 0 0 0;
+}
+
+.card {
+	background-size: cover;
+	background-position: center;
+	height: 500px;
+	color: white;
+}
+
+.card .headline {
+	font-size: 40px;
+	line-height: 1.1;
+	margin: 38px 0 0 0;
+}
+
+.card .subheadline {
+	font-size: 21px;
+	line-height: 1.2381;
+	font-weight: 400;
+	letter-spacing: 0.016em;
+	margin: 4px auto 12px auto;
+}
+
+.card a {
+	font-size: 17px;
+	line-height: 1.23536;
+	font-weight: 400;
+	margin: 0 12px;
+}
+
+.card .chevron {
+	margin: 0 0 -2px 0;
+	height: 14px;
+}
+
+.iPad {
+	background-image: url("https://www.apple.com/v/home/ay/images/promos/ipad/promo_ipad__fioegapg12qi_large.jpg");
+	color: #1d1d1f;
+}
+
+.MacBook-Pro {
+	background-image: url("https://www.apple.com/v/home/ay/images/promos/macbook-pro-14-and-16/promo_mbp__ek7p477bkp6q_large.jpg");
+}
+
+.HomePod {
+	background-image: url("https://www.apple.com/v/home/ay/images/promos/homepod/promo_homepod__f7jnolq94m2y_large.jpg");
+}
+
+.AirPods-Pro {
+	background-image: url("https://www.apple.com/v/home/ay/images/promos/airpods-pro/promo_airpods_pro_avail__gaxggskofx6y_large.jpg");
+}
+
+.Fitness .headline {
+	background-image: url("https://www.apple.com/v/home/ay/images/logos/apple-fitness-plus-iphone/promo_logo_fitness_plus_iphone__dpayetemakq6_large.png");
+	height: 26px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain, cover;
+	margin: 0 0 10px 0;
+}
+
+.Fitness {
+	background-image: url("https://www.apple.com/v/home/ay/images/promos/apple-fitness-plus-iphone/promo-apple-fitness-plus-iphone__bzeal882mv7m_large.jpg");
+}
+
+.Fitness .subheadline,
+.Apple-Card .subheadline {
+	max-width: 320px;
+	color: #1d1d1f;
+}
+
+.Apple-Card .headline {
+	background-image: url("https://www.apple.com/v/home/ay/images/logos/apple-card/logo__dcojfwkzna2q_large.png");
+	height: 26px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain, cover;
+	margin: 0 0 10px 0;
+}
+
+.Apple-Card {
+	background-image: url("https://www.apple.com/v/home/ay/images/promos/apple-card/tile__cauwwcyyn9hy_large.jpg");
+}
+
+/*----------- footer section CSS -----------*/
+
+footer {
+	background-color: #f5f5f7;
+	color: #6e6e73;
+}
+
+.center-container {
+	margin: 0 auto;
+	display: border-box;
+	max-width: 980px;
+}
+
+.additional-text {
+	padding: 17px 0 11px 0;
+	border-bottom: 1px solid #d2d2d7;
+}
+
+.additional-text ul {
+	list-style: none;
+	margin: 0;
+	padding: 0 0 0.8em 0;
+	font-size: 12px;
+}
+
+.additional-text li {
+	padding-bottom: 0.8em;
+	letter-spacing: -0.01em;
+	line-height: 1.33337;
+}
+
+.additional-text li a {
+	text-decoration: underline;
+	color: #424245;
+}
+
+.lower-nav {
+	display: flex;
+	padding-top: 20px;
+	flex-wrap: nowrap;
+	padding: 20px 16px 0 16px;
+}
+
+.nav-column {
+	flex-basis: 25%;
+}
+
+.nav-column div {
+	padding-bottom: 24px;
+}
+
+.nav-column ul {
+	padding: 0;
+	margin: 0 20px 0 0;
+}
+
+.nav-column h3,
+.nav-column li {
+	padding: 0;
+	margin: 0 0 0.8em 0;
+	font-size: 1em;
+	color: #1d1d1f;
+}
+
+.nav-column li {
+	list-style: none;
+}
+
+.nav-column li > a {
+	color: #6e6e73;
+}
+
+.lower-footer {
+	padding: 10px 16px 21px 16px;
+}
+
+.footer-shop {
+	padding-bottom: 8px;
+	margin-bottom: 7px;
+	border-bottom: 1px solid #d2d2d7;
+}
+
+.footer-shop a {
+	color: #06c;
+	text-decoration: underline;
+}
+
+.footer-copyright {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.copyright {
+	display: flex;
+	margin-top: 5px;
+	gap: 30px;
+}
+
+.copyright ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+.copyright li {
+	padding: 0 10px 0 0;
+	margin-right: 7px;
+	list-style: none;
+	border-right: 1px solid #86868b;
+}
+
+.copyright li a {
+	color: #424245;
+}
+
+/*----------- Image slider CSS design -----------*/
+
+.slider-section {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin: 16px 0 38px 0;
+}
+
+.slider {
+	width: calc(689px + 20px);
+	height: 368px;
+	overflow: hidden;
+}
+
+.slides {
+	width: 500%;
+	height: 368px;
+	display: flex;
+}
+
+.slides input {
+	display: none;
+}
+
+.slide {
+	width: 20%;
+	transition: 2s;
+}
+
+.slide img {
+	width: 689px;
+	height: 368px;
+	margin: 0 10px;
+}
+
+/* CSS for manual navigation */
+
+.navigation-manual {
+	position: absolute;
+	width: 689px;
+	margin-top: 15px;
+	display: flex;
+	justify-content: center;
+}
+
+.manual-btn {
+	background: rgba(0, 0, 0, 0.16);
+	padding: 5px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.manual-btn:not(:last-child) {
+	margin-right: 10px;
+}
+
+.manual-btn:hover {
+	background: gray;
+}
+
+#radio1:checked ~ .first {
+	margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+	margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+	margin-left: -40%;
+}
+
+#radio4:checked ~ .first {
+	margin-left: -60%;
+}
+
+/* CSS for automatic navigation */
+
+.navigation-auto {
+	position: absolute;
+	display: flex;
+	width: 689px;
+	justify-content: center;
+	margin-top: calc(368px + 15px);
+}
+
+.navigation-auto div {
+	padding: 5px;
+	border-radius: 10px;
+	transition: 0.5s;
+}
+
+.navigation-auto div:not(:last-child) {
+	margin-right: 10px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+	background: grey;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+	background: grey;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+	background: grey;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+	background: grey;
+}
